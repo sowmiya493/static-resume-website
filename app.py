@@ -6,9 +6,9 @@ import tempfile
 app = Flask(__name__)  # Assuming templates are in the 'templates' directory
 
 # AWS S3 configuration
-S3_BUCKET = 'resume-21ita49'
-AWS_ACCESS_KEY_ID = 'AKIAVRUVRFQPNV7HCCMM'
-AWS_SECRET_ACCESS_KEY = 'w54jrOjMRnsydRfM40KZYx7OzLkgqkEcok1CnGcc'
+S3_BUCKET = 'your-bucket-name'
+AWS_ACCESS_KEY_ID = 'your-access-key'
+AWS_SECRET_ACCESS_KEY = 'your-secret-key'
 
 s3 = boto3.client('s3',
                   aws_access_key_id=AWS_ACCESS_KEY_ID,
